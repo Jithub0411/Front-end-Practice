@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS3-Display2</title>
+    <style>
+      .container {
+        color: #ff0000;
+      }
+      #p2 {
+        color: initial;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+      .text-large {
+        font-size: 200%;
+      }
+      .text-red {
+        color: red;
+      }
+      .text-blue {
+        color: blue;
+      }
+
+      a[href] {
+        color: green;
+      }
+
+      a[target="_blank"] {
+        color: red;
+      }
+
+      h1[title~="first"] {
+        color: red;
+      }
+      p[lang|="en"] {
+        color: purple;
+      }
+
+      a[href^= "https://"]
+      {
+        color: skyblue;
+      }
+
+      div[class*="test"] {
+        color: firebrick;
+      }
+      div[class~="test"] {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Heading</h1>
+    <div class="container">
+      <p id="p1">paragraph 1</p>
+      <p id="p2">paragraph 2</p>
+    </div>
+    <p>paragraph 3</p>
+
+    <p class="text-center">Center</p>
+    <p class="text-large text-red">Large Red</p>
+    <p class="text-center text-large text-blue">Cneter Large Blue</p>
+    <a href="http://www.poiemaweb.com">poiemaweb.com</a><br />
+    <a href="http://www.google.com" target="_blank">google.com</a><br />
+    <a href="http://www.naver.com" target="_top">naver.com</a><br />
+    <h1 title="heading first">Heading first</h1>
+    <h1 title="heading-first">Heading-first</h1>
+    <h1 title="heading second">Heading second</h1>
+    <h1 title="heading third">Heading third</h1>
+    <p lang="en">Hello!</p>
+    <p lang="en-us">Hi!</p>
+    <p lang="en-gb">Ello!</p>
+    <p lang="us">Hi!</p>
+    <p lang="no">Hei!</p>
+
+    <a href="https://www.test.com">https://www.test.com</a><br />
+    <a href="http://www.test.com">http://www.test.com</a><br />
+
+    <div class="first-test">The first div element.</div>
+    <div class="second">The second div element</div>
+    <div class="test">The third div element</div>
+    <p class="test">This is some text in a paragraph.</p>
+  </body>
+</html>
