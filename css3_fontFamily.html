@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .serif {
+        font-family: "Times New Roman", Times, serif;
+      }
+      .sans-serif {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .monospace {
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      p {
+        font-size: 2em;
+      }
+
+      .italic {
+        font-stye: italic;
+      }
+
+      .light {
+        font-weight: lighter;
+      }
+
+      .thick {
+        font-weight: bold;
+      }
+
+      .thicker {
+        font-weight: 900;
+      }
+
+      .small {
+        line-height: 70%;
+      }
+
+      .big {
+        line-height: 1.2;
+      }
+      .lh-3x {
+        line-height: 3;
+      }
+
+      .button {
+        width: 150px;
+        height: 70px;
+        background-color: #ff6a00;
+        border-radius: 60px;
+        box-shadow: 5px 5px 5px #a9a9a9;
+      }
+
+      .button > a {
+        display: block;
+        font: italic bold 2em/70px Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        text-align: center;
+      }
+      .loose {
+        letter-spacing: 2px;
+      }
+      .tight {
+        letter-spacing: -1px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>font-family</h1>
+    <p class="serif">Times New Roman font.</p>
+    <p class="sans-serif">Arial, Helvetica, sans-serif</p>
+    <p class="monospace">Courier New Font</p>
+    <br />
+
+    <p class="light">font-weight: lighter</p>
+    <p class="thick">font-weight: bold</p>
+    <p class="thicker">font-weight: 900</p>
+    <br />
+
+    <p>
+      default line-height.<br />
+      default line-height.<br />
+      대부분 브라우저의 default line height는 약 110% ~ 120%.<br />
+    </p>
+
+    <p class="small">
+      line-height: 70%<br />
+      line-heightL 70%<br />
+    </p>
+
+    <p class="big">
+      line-height: 1.2<br />
+      line-height: 1.2<br />
+    </p>
+
+    <p class="lh-3x">
+      line-height: 3.0<br />
+      line-height: 3.0<br />
+    </p>
+
+    <div class="button">
+      <a href="#">Click</a>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+
+    <p class="loose">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit
+    </p>
+
+    <p class="tight">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit
+    </p>
+  </body>
+</html>
